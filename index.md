@@ -1,8 +1,18 @@
-## Tópico 1
+## Setup
 
-You can use the [editor on GitHub](https://github.com/Thaysfsil/TensorFlow-Lite/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+1. Instale mini-conda (mode default): https://conda.io/miniconda.html
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+2. Se você está na pasta local deste repositório, digite o seguinte comando no terminal para criar um environment com todas as dependencias necessárias:
+
+    2.1. Para Linux:
+    ```markdown
+        conda env create -f  environments/Linux/tensorflowEnvironmentLinux.yaml
+    ```
+
+    2.2. Para Mac:
+    ```markdown
+        conda env create -f  environments/Mac/tensorflowEnvironmentMac.yaml
+    ```    
 
 ### Tópico 2
 

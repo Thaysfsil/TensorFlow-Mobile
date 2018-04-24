@@ -12,8 +12,12 @@
     2.2. Para Mac:
     ```markdown
         conda env create -f  environments/Mac/tensorflowEnvironmentMac.yaml
-    ```    
+    ```
 
+3. Para ativar o environment:
+```markdown
+    source activate tensorflowEnv
+```
 ### Tópico 2
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for

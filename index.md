@@ -18,9 +18,15 @@
 ```markdown
     source activate tensorflowEnv
 ```
-### Tópico 2
+## Clone o repositório
+```markdown
+    git clone https://github.com/larissalages/TensorFLow_Workshop.git
+```
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Descomprimir os datasets
+
+A pasta datasets contém X bases de dados de imagens comprimidas. São elas:
+Descomprima os datasets que deseja usar no treinamento.
 
 ```markdown
 Syntax highlighted code block

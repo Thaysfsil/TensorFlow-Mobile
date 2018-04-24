@@ -14,7 +14,7 @@
         conda env create -f  environments/Mac/tensorflowEnvironmentMac.yaml
     ```
 
-3. Para ativar o environment:
+3. Para ativar o entrar no environment:
 ```markdown
     source activate tensorflowEnv
 ```

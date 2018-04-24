@@ -31,11 +31,21 @@ Descomprima os datasets que deseja usar no treinamento.
 ## Retreinando a rede
 
 A rede pode ser retreinada com qualquer modelo pré-pronto da Google. Mas neste workshop vamos utilizar o MobileNet. Este modelo é otimizado para ser pequeno e eficiente, mas com o custo da precisão ser um pouco menor que a dos outros.
-<br />   
-Outros modelos pré-treinados: https://github.com/tensorflow/models/tree/master/research/slim#pre-trained-models. 
+<br />  
+<br /> 
+Você pode encontrar outros modelos pré-treinados neste repositório: https://github.com/tensorflow/models/tree/master/research/slim#pre-trained-models. 
+<br />
 <br />
 Escolha uma das opções de resolução de imagem: 128,160,192, ou 224px.<br />
 Melhores resoluções precisam de mais tempo de processamento, mas resultam em uma acurácia melhor.
+<br />
+<br />
+Inicialize as seguintes variáveis shell para configurar a rede:
+```markdown
+IMAGE_SIZE=224
+ARCHITECTURE="mobilenet_1.0_${IMAGE_SIZE}
+```
+
 
 ```markdown
 Syntax highlighted code block

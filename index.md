@@ -23,16 +23,19 @@
     git clone https://github.com/larissalages/TensorFLow_Workshop.git
 ```
 
-## Descomprimir os datasets
+## Descomprimindo os datasets
 
 A pasta datasets contém X bases de dados de imagens comprimidas. São elas: <br />
 Descomprima os datasets que deseja usar no treinamento.
 
 ## Retreinando a rede
 
-A rede pode ser retreinada com qualquer modelo pré-pronto da Google. Mas neste workshop vamos utilizar o MobileNet. Este modelo é otimizado para ser pequeno e eficiente, mas com o custo da precisão ser um pouco menor que a dos outros.   
+A rede pode ser retreinada com qualquer modelo pré-pronto da Google. Mas neste workshop vamos utilizar o MobileNet. Este modelo é otimizado para ser pequeno e eficiente, mas com o custo da precisão ser um pouco menor que a dos outros.
+<br />   
 Outros modelos pré-treinados: https://github.com/tensorflow/models/tree/master/research/slim#pre-trained-models. 
-
+<br />
+Escolha uma das opções de resolução de imagem: 128,160,192, ou 224px.<br />
+Melhores resoluções precisam de mais tempo de processamento, mas resultam em uma acurácia melhor.
 
 ```markdown
 Syntax highlighted code block

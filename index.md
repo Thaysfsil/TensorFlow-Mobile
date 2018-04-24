@@ -28,7 +28,8 @@
 A pasta datasets contém X bases de dados de imagens comprimidas. São elas: <br />
 Descomprima os datasets que deseja usar no treinamento.
 
-#Retreinando a rede
+##Retreinando a rede
+
 A rede pode ser retreinada com qualquer modelo pré-pronto da Google. Mas neste workshop vamos utilizar o MobileNet. Este modelo é otimizado para ser pequeno e eficiente, mas com o custo da precisão ser um pouco menor que a dos outros.   
 Outros modelos pré-treinados: https://github.com/tensorflow/models/tree/master/research/slim#pre-trained-models. 
 

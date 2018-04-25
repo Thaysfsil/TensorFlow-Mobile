@@ -84,7 +84,7 @@ Você pode ler sobre essas opções no help do script:
 ```markdown
 python -m scripts.retrain -h
 ```
-<br />
+
 ## Otimizando o modelo para rodar em dispositivos móveis
 
 Uma maneira pela qual a biblioteca TensorFlow é mantida pequena, para dispositivos móveis, é porque ela suporta apenas um subconjunto de operações que são comumente usadas durante a fase de validação e teste. Essa é uma abordagem razoável, já que o treinamento não é realizado nas plataformas móveis. Você pode ver a lista de operações suportadas no arquivo tensorflow / contrib / makefile / tf_op_files.txt.
@@ -100,7 +100,7 @@ python -m tensorflow.python.tools.optimize_for_inference \
   --output_names="final_result"
 ```
 Este script vai criar um novo arquivo em tf_files/optimized_graph.pb.<br />
-O modelo treinado ainda tem em torno de 80 MB de tamanho. Esse tamanho ainda pode ser um fator limitante para o aplicativo que o inclua. A maior parte do espaço ocupado pelo modelo é pelos pesos, que são grandes blocos de números de ponto flutuante.
+O modelo treinado ainda tem em torno de 80 MB de tamanho. Esse tamanho ainda pode ser um fator limitante para o aplicativo que o inclua. A maior parte do espaço ocupado pelo modelo é pelos pesos, que são grandes blocos de números de ponto flutuante. Então, para fazer a compressão dos pesos, é utilizado o arquivo quantize_graph.
 
 ## Quantizando os pesos da rede
 

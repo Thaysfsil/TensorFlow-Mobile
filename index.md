@@ -142,6 +142,7 @@ No Android Studio, execute o Gradle sync, para que o sistema de compilação pos
 
 O APP deve ser algo como na figura:
 <br />
+<br />
 <img src="L.jpeg" width="40%">
 
 

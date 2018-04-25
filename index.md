@@ -19,7 +19,7 @@
     source activate tensorflowEnv
 ```
 
-## Clone o repositório
+## Clonando o repositório
 
 ```markdown
     git clone https://github.com/larissalages/TensorFLow_Workshop.git
@@ -120,6 +120,14 @@ Se o seu celular ainda não estiver com o modo desenvolvedor ativado, [siga esta
 Antes de fazer qualquer alteração no aplicativo, vamos executar a versão que acompanha o repositório.
 Execute uma sincronização Gradle e, em seguida, pressione play no Android Studio para iniciar o processo de criação e instalação.
 Quando o APP estiver instalado, clique no ícone do aplicativo, para iniciá-lo. Esta versão do aplicativo usa o modelo MobileNet, pré-treinado com as 1000 categorias do ImageNet. 
+
+## Modificando o APP para funcionar com o nosso modelo
+
+Substitua os arquivos graph.pb e labels.txt do MobileNet, que estão no diretório android/tfmobile/assets, pela nossa versão otimizada do modelo. O seguinte comando realiza essa tarefa:
+```markdown
+    cp tf_files/rounded_graph.pb android/tfmobile/assets/graph.pb
+    cp tf_files/retrained_labels.txt android/tfmobile/assets/labels.txt 
+```
 
 ```markdown
 Syntax highlighted code block

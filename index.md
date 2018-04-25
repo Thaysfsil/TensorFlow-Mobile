@@ -115,7 +115,11 @@ Abra o Android Studio. Depois que ele carregar, selecione "Abrir um projeto exis
 No seletor de arquivos, escolha TensorFLow_Workshop/android/tfmobile. <br />
 Se aparecer um pop-up "Gradle Sync", a primeira vez que abrir o projeto, clique OK".
 <br />
-Se o seu celular ainda não estiver com o modo desenvolvedor ativado, [siga estas instruções](http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2014/10/como-ativar-o-modo-desenvolvedor-no-android.html)
+Se o seu celular ainda não estiver com o modo desenvolvedor ativado, [siga estas instruções](http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2014/10/como-ativar-o-modo-desenvolvedor-no-android.html).
+<br />
+Antes de fazer qualquer alteração no aplicativo, vamos executar a versão que acompanha o repositório.
+Execute uma sincronização Gradle e, em seguida, pressione play no Android Studio para iniciar o processo de criação e instalação.
+![alt text](https://commons.wikimedia.org/wiki/File:Tensorflow_logo.svg)
 ```markdown
 Syntax highlighted code block
 

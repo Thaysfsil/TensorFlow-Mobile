@@ -123,36 +123,21 @@ Quando o APP estiver instalado, clique no ícone do aplicativo, para iniciá-lo.
 
 ## Modificando o APP para funcionar com o nosso modelo
 
-Substitua os arquivos graph.pb e labels.txt do MobileNet, que estão no diretório android/tfmobile/assets, pela nossa versão otimizada do modelo. O seguinte comando realiza essa tarefa:
+Substitua os arquivos graph.pb e labels.txt do MobileNet, que estão no diretório android/tfmobile/assets, pela versão otimizada do nosso modelo. O seguinte comando realiza essa tarefa:
 ```markdown
     cp tf_files/rounded_graph.pb android/tfmobile/assets/graph.pb
     cp tf_files/retrained_labels.txt android/tfmobile/assets/labels.txt 
 ```
+## Altere o output_name na classe ClassifierActivity.java
+
+O aplicativo está atualmente configurado para ler a saída da MobileNet, chamada "MobilenetV1/Predictions/Softmax". O nó de saída do nosso modelo tem um nome diferente: "final_result". Abra ClassifierActivity.java e atualize a variável OUTPUT_NAME da seguinte forma:
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+  private static final String INPUT_NAME = "input";
+  private static final String OUTPUT_NAME = "final_result";
 ```
+## Execute o app:
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+No Android Studio, execute o Gradle sync, para que o sistema de compilação possa localizar seus arquivos e, em seguida, clique em play, para iniciar o processo de compilação e instalação como antes.
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Thaysfsil/TensorFlow-Lite/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+O APP deve ser algo como na figura:

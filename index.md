@@ -78,6 +78,12 @@ python -m scripts.label_image \
     --graph=tf_files/retrained_graph.pb  \
     --image=path_para_imagem/nome_da_imagem
 ```
+O script retrain tem várias outras opções de linha de comando que você pode usar.
+Você pode ler sobre essas opções no help do script:
+
+```markdown
+python -m scripts.retrain -h
+```
 
 ```markdown
 Syntax highlighted code block

@@ -87,7 +87,19 @@ python -m scripts.retrain -h
 
 ## Otimizando o modelo para rodar em dispositivos móveis
 <br />
-Uma maneira pela qual a biblioteca TensorFlow é mantida pequena, para dispositivos móveis, é porque ela suporta apenas um subconjunto de operações que são comumente usadas durante a fase de validação e teste. Essa é uma abordagem razoável, já que o treinamento não é realizado nas plataformas móveis. Você pode ver a lista de operaçes suportadas no arquivo tensorflow / contrib / makefile / tf_op_files.txt.
+Uma maneira pela qual a biblioteca TensorFlow é mantida pequena, para dispositivos móveis, é porque ela suporta apenas um subconjunto de operações que são comumente usadas durante a fase de validação e teste. Essa é uma abordagem razoável, já que o treinamento não é realizado nas plataformas móveis. Você pode ver a lista de operações suportadas no arquivo tensorflow / contrib / makefile / tf_op_files.txt.
+<br />
+Para evitar problemas causados por operações de treinamento não suportadas, a instalação do TensorFlow inclui uma ferramenta, optimize_for_inference, que remove tudo que não é necessário para um determinado conjunto de entradas e saídas.
+O script também faz algumas outras otimizações que ajudam a acelerar o modelo. Ele pode acelerar em até 30%, dependendo do modelo de entrada. Veja como você executa o script:
+
+```markdown
+python -m tensorflow.python.tools.optimize_for_inference \
+  --input=tf_files/retrained_graph.pb \
+  --output=tf_files/optimized_graph.pb \
+  --input_names="input" \
+  --output_names="final_result"
+```
+
 
 ```markdown
 Syntax highlighted code block

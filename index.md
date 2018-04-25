@@ -100,11 +100,15 @@ python -m tensorflow.python.tools.optimize_for_inference \
   --output_names="final_result"
 ```
 Este script vai criar um novo arquivo em tf_files/optimized_graph.pb.<br />
-O modelo treinado ainda tem em torno de 80 MB de tamanho. Esse tamanho ainda pode ser um fator limitante para o aplicativo que o inclua. A maior parte do espaço ocupado pelo modelo é pelos pesos, que são grandes blocos de números de ponto flutuante. Então, para fazer a compressão dos pesos, é utilizado o arquivo quantize_graph.
+O modelo treinado ainda tem em torno de 80 MB de tamanho. Esse tamanho ainda pode ser um fator limitante para o aplicativo que o inclua. A maior parte do espaço ocupado pelo modelo é pelos pesos, que são grandes blocos de números de ponto flutuante. Então, para fazer a compressão dos pesos, é utilizado o arquivo **quantize_graph.py**.
 
-## Quantizando os pesos da rede
-
-
+```markdown
+python -m scripts.quantize_graph \
+  --input=tf_files/optimized_graph.pb \
+  --output=tf_files/rounded_graph.pb \
+  --output_node_names=final_result \
+  --mode=weights_rounded
+```
 
 ```markdown
 Syntax highlighted code block

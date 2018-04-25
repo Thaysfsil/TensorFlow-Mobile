@@ -85,6 +85,10 @@ Você pode ler sobre essas opções no help do script:
 python -m scripts.retrain -h
 ```
 
+## Otimizando o modelo para rodar em dispositivos móveis
+
+Uma maneira pela qual a biblioteca TensorFlow é mantida pequena, para dispositivos móveis, é porque ela suporta apenas um subconjunto de operações que são comumente usadas durante a fase de validação e teste. Essa é uma abordagem razoável, já que o treinamento não é realizado nas plataformas móveis. Você pode ver a lista de operaçes suportadas no arquivo tensorflow / contrib / makefile / tf_op_files.txt.
+
 ```markdown
 Syntax highlighted code block
 

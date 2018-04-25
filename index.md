@@ -87,7 +87,7 @@ python -m scripts.retrain -h
 
 ## Otimizando o modelo para rodar em dispositivos móveis
 
-Uma maneira pela qual a biblioteca TensorFlow é mantida pequena, para dispositivos móveis, é porque ela suporta apenas um subconjunto de operações que são comumente usadas durante a fase de validação e teste. Essa é uma abordagem razoável, já que o treinamento não é realizado nas plataformas móveis. Você pode ver a lista de operações suportadas no arquivo tensorflow / contrib / makefile / tf_op_files.txt.
+Uma maneira pela qual a biblioteca TensorFlow é mantida pequena, para dispositivos móveis, é porque ela suporta apenas um subconjunto de operações que são comumente usadas durante a fase de validação e teste. Essa é uma abordagem razoável, já que o treinamento não é realizado nas plataformas móveis. Você pode ver a lista de operações suportadas no arquivo tensorflow/ contrib/makefile/tf_op_files.txt.
 <br />
 Para evitar problemas causados por operações de treinamento não suportadas, a instalação do TensorFlow inclui uma ferramenta, optimize_for_inference, que remove tudo que não é necessário para um determinado conjunto de entradas e saídas.
 O script também faz algumas outras otimizações que ajudam a acelerar o modelo. Ele pode acelerar em até 30%, dependendo do modelo de entrada. Veja como você executa o script:
@@ -109,6 +109,11 @@ python -m scripts.quantize_graph \
   --output_node_names=final_result \
   --mode=weights_rounded
 ```
+# Android APP
+
+Abra o Android Studio. Depois que ele carregar, selecione "Abrir um projeto existente do Android Studio".
+No seletor de arquivos, escolha TensorFLow_Workshop/android/tfmobile. <br />
+Se aparecer um pop-up "Gradle Sync", a primeira vez que abrir o projeto, clique OK".
 
 ```markdown
 Syntax highlighted code block

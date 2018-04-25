@@ -62,8 +62,8 @@ Este script baixa o modelo pré-treinado, adiciona uma camada final e treina est
 O script vai gerar primeiramente todos os arquivos de bottleneck, que são todas as camadas antes da camada final, depois disso o treinamento da camada final começa. 
 O script retrain escreve os dados nos seguintes arquivos:
 
--tf_files/retrained_graph.pb: Contém uma versão do modelo selecionado com a camada final retreinada com as suas categorias.
--tf_files/retrained_labels.txt: Arquivo de texto contendo as labels.
+**tf_files/retrained_graph.pb**: Contém uma versão do modelo selecionado com a camada final retreinada com as suas categorias.
+**tf_files/retrained_labels.txt**: Arquivo de texto contendo as labels.
 
 ## Testando o modelo
 

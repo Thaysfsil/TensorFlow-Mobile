@@ -119,7 +119,8 @@ Se o seu celular ainda não estiver com o modo desenvolvedor ativado, [siga esta
 <br />
 Antes de fazer qualquer alteração no aplicativo, vamos executar a versão que acompanha o repositório.
 Execute uma sincronização Gradle e, em seguida, pressione play no Android Studio para iniciar o processo de criação e instalação.
-![alt text](https://twitter.com/gp_pulipaka/status/940573461105299456)
+Quando o APP estiver instalado, clique no ícone do aplicativo, para iniciá-lo. Esta versão do aplicativo usa o modelo MobileNet, pré-treinado com as 1000 categorias do ImageNet. 
+
 ```markdown
 Syntax highlighted code block
 

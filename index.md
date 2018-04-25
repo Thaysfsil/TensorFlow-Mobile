@@ -1,6 +1,6 @@
 ## Setup
 
-1. Instale mini-conda (mode default): https://conda.io/miniconda.html
+1. Instale mini-conda (mode default): [miniconda] (https://conda.io/miniconda.html)
 
 2. Se você está na pasta local deste repositório, digite o seguinte comando no terminal para criar um environment com todas as dependencias necessárias:
 
@@ -18,8 +18,9 @@
 ```markdown
     source activate tensorflowEnv
 ```
+
 ## Clone o repositório
-<br />
+
 ```markdown
     git clone https://github.com/larissalages/TensorFLow_Workshop.git
 ```
@@ -33,7 +34,7 @@ Descomprima os datasets que deseja usar no treinamento.
 
 A rede pode ser retreinada com qualquer modelo pré-pronto da Google. Mas neste workshop vamos utilizar o MobileNet. Este modelo é otimizado para ser pequeno e eficiente, mas com o custo da precisão ser um pouco menor que a dos outros.
 <br /> 
-Você pode encontrar outros modelos pré-treinados neste repositório: https://github.com/tensorflow/models/tree/master/research/slim#pre-trained-models. 
+Você pode encontrar outros modelos pré-treinados neste repositório: [pre-trained-models](https://github.com/tensorflow/models/tree/master/research/slim#pre-trained-models).
 <br />
 <br />
 Escolha uma das opções de resolução de imagem: 128,160,192, ou 224px. Melhores resoluções precisam de mais tempo de processamento, mas resultam em uma acurácia melhor.

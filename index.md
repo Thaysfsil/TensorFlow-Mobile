@@ -141,6 +141,6 @@ O aplicativo está atualmente configurado para ler a saída da MobileNet, chamad
 No Android Studio, execute o Gradle sync, para que o sistema de compilação possa localizar seus arquivos e, em seguida, clique em play, para iniciar o processo de compilação e instalação como antes.
 
 O APP deve ser algo como na figura:
-![](L.jpeg | width=100)
+<img src="L.jpeg" width="40%">
 
 

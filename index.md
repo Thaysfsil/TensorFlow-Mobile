@@ -1,6 +1,6 @@
 ## Setup
 
-1. Instale mini-conda (mode default): [miniconda] (https://conda.io/miniconda.html)
+1. Instale mini-conda (mode default): [miniconda](https://conda.io/miniconda.html)
 
 2. Se você está na pasta local deste repositório, digite o seguinte comando no terminal para criar um environment com todas as dependencias necessárias:
 

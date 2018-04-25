@@ -13,7 +13,10 @@
     ```markdown
         conda env create -f  environments/Mac/tensorflowEnvironmentMac.yaml
     ```
-
+    2.3 Para Windows:
+        Baixe e instale o docker:
+        [Docker para Windows](https://drive.google.com/file/d/12LIDIJnRttM2GwfMDUoOSaMrjfVOczfy/view?usp=sharing)
+        
 3. Para ativar e entrar no environment:
 ```markdown
     source activate tensorflowEnv

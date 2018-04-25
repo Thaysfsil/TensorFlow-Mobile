@@ -115,8 +115,7 @@ Abra o Android Studio. Depois que ele carregar, selecione "Abrir um projeto exis
 No seletor de arquivos, escolha TensorFLow_Workshop/android/tfmobile. <br />
 Se aparecer um pop-up "Gradle Sync", a primeira vez que abrir o projeto, clique OK".
 <br />
-Se o seu celular ainda não estiver com o modo desenvolvedor ativado, [siga estas instruções].
-(http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2014/10/como-ativar-o-modo-desenvolvedor-no-android.html).
+Se o seu celular ainda não estiver com o modo desenvolvedor ativado, [siga estas instruções](http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2014/10/como-ativar-o-modo-desenvolvedor-no-android.html)
 ```markdown
 Syntax highlighted code block
 

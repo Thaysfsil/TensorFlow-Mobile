@@ -45,7 +45,7 @@ Inicialize as seguintes variáveis shell para configurar a rede:
 IMAGE_SIZE=224
 ARCHITECTURE="mobilenet_1.0_${IMAGE_SIZE}
 ```
-## Executar o treinamento
+## Executando o treinamento
 
 Para começar a retreinar a rede, execute o seguinte comando:
 ```markdown
@@ -65,11 +65,19 @@ O script retrain escreve os dados nos seguintes arquivos:
 -tf_files/retrained_graph.pb: Contém uma versão do modelo selecionado com a camada final retreinada com as suas categorias.
 -tf_files/retrained_labels.txt: Arquivo de texto contendo as labels.
 
-The retraining script writes data to the following two files:
+## Testando o modelo
 
-tf_files/retrained_graph.pb, which contains a version of the selected network with a final layer retrained on your categories.
-tf_files/retrained_labels.txt, which is a text file containing labels.
+A pasta test_set contém algumas imagens para teste. Para testar todas as imagens da pasta no modelo, execute o seguinte comando:
 
+```markdown
+python test_all.py
+```
+Para testar uma imagem especifica, faça:
+```markdown
+python -m scripts.label_image \
+    --graph=tf_files/retrained_graph.pb  \
+    --image=path_para_imagem/nome_da_imagem
+```
 
 ```markdown
 Syntax highlighted code block

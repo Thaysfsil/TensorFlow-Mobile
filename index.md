@@ -147,5 +147,12 @@ O APP deve ser algo como na figura:
 <br />
 <br />
 <img src="L.jpeg" width="40%">
+<br />
+<br />
+# Artistic style transfer
 
+Primeiro clone o repositorio:
 
+```markdown
+git clone https://github.com/googlecodelabs/tensorflow-style-transfer-android
+```

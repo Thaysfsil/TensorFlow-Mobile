@@ -163,3 +163,16 @@ Carregue o código no Android Studio: <br />
     3. Assim que terminar de importar o projeto, abra o arquivo **StylizeActivity**.
     
 O código original do TensorFlow que gerou esta rede está disponível [nesta página do GitHub](https://github.com/tensorflow/magenta). Antes de usá-lo em um ambiente com recursos restritos, como um aplicativo móvel, esse modelo foi exportado e transformado para usar tipos de dados menores e remover cálculos redundantes. O resultado final é o arquivo **stylize_quantized.pb** que será usado neste app.
+
+Para adicionar as bibliotecas de inferência e suas dependências ao nosso projeto, precisamos adicionar a Biblioteca de inferências Android TensorFlow e a API Java, que está disponível no JCenter (em Arquivos, tensorflow-android) ou você pode construí-la a partir da fonte TensorFlow.
+
+1. No Android Studio abra o build.gradle <br />
+2. Adicione o seguinte código ao arquivo:
+```markdown
+dependencies {
+   compile 'org.tensorflow:tensorflow-android:1.2.0-preview'
+}
+```
+
+
+Clique no botão Gradle Sync para permitir as mudanças dentro da IDE.

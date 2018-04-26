@@ -140,6 +140,17 @@ O aplicativo está atualmente configurado para ler a saída da MobileNet, chamad
   private static final String INPUT_NAME = "input";
   private static final String OUTPUT_NAME = "final_result";
 ```
+
+## Altere as dependencias do Build Gradle
+
+Dentro de Gradle Scripts, em build.gradle, troque:
+
+```markdown
+compile 'org.tensorflow:tensorflow-android:1.2.0-preview'
+por
+compile 'org.tensorflow:tensorflow-android:1.5.0'
+```
+
 ## Execute o app:
 
 No Android Studio, execute o Gradle sync, para que o sistema de compilação possa localizar seus arquivos e, em seguida, clique em play, para iniciar o processo de compilação e instalação como antes.

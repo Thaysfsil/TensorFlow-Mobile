@@ -147,7 +147,9 @@ Dentro de Gradle Scripts, em build.gradle, troque:
 
 ```markdown
 compile 'org.tensorflow:tensorflow-android:1.2.0-preview'
+```
 por
+```markdown
 compile 'org.tensorflow:tensorflow-android:1.5.0'
 ```
 

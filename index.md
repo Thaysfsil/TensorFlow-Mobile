@@ -156,9 +156,9 @@ Primeiro clone o repositorio:
 ```markdown
 git clone https://github.com/googlecodelabs/tensorflow-style-transfer-android
 ```
-Carregue o código no android studio: 
-    1. Abra o Android Studio e selecione Import Project, navegue pelos diretórios até encontrar o repositório clonado.
-    2. Você DEVE aceitar a sugestão de usar o Gradle wrapper e recusar o Instant Run.
+Carregue o código no android studio: <br />
+    1. Abra o Android Studio e selecione Import Project, navegue pelos diretórios até encontrar o repositório clonado.<br />
+    2. Você DEVE aceitar a sugestão de usar o Gradle wrapper e recusar o Instant Run.<br />
     3. Assim que terminar de importar o projeto, abra o arquivo **StylizeActivity**.
     
 O código original do TensorFlow que gerou esta rede está disponível nesta página do [GitHub](https://github.com/tensorflow/magenta). Antes de usá-lo em um ambiente com recursos restritos, como um aplicativo móvel, esse modelo foi exportado e transformado para usar tipos de dados menores e remover cálculos redundantes.

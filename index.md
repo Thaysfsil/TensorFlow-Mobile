@@ -30,7 +30,7 @@
 
 ## Descomprimindo os datasets
 
-A pasta datasets contém X bases de dados de imagens comprimidas. São elas: <br />
+A pasta datasets contém 4 bases de dados de imagens comprimidas. São elas:Funko, Pikachu, Moedas e Laptop. <br />
 Descomprima os datasets que deseja usar no treinamento.
 
 ## Retreinando a rede

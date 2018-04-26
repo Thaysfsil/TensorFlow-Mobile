@@ -43,10 +43,10 @@ Você pode encontrar outros modelos pré-treinados neste repositório: [pre-trai
 Escolha uma das opções de resolução de imagem: 128,160,192, ou 224px. Melhores resoluções precisam de mais tempo de processamento, mas nem sempre resultam em uma acurácia melhor.
 <br />
 <br />
-Inicialize as seguintes variáveis shell para configurar a rede:
+Na pasta do repositório, copie e cole no terminal as seguintes variáveis para configurar a rede:
 ```markdown
 IMAGE_SIZE=224
-ARCHITECTURE="mobilenet_1.0_${IMAGE_SIZE}
+ARCHITECTURE="mobilenet_1.0_${IMAGE_SIZE}"
 ```
 ## Executando o treinamento
 

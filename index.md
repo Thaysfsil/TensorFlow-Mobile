@@ -1,3 +1,4 @@
+# Parte 1
 ## Setup
 
 1. Instale mini-conda (mode default): [miniconda](https://conda.io/miniconda.html)
@@ -149,7 +150,7 @@ O APP deve ser algo como na figura:
 <img src="L.jpeg" width="40%">
 <br />
 <br />
-# Artistic style transfer
+# Parte 2: Artistic style transfer
 
 Primeiro clone o repositorio:
 

@@ -249,7 +249,7 @@ A dimensão da imagem final ficará 100px de largura e altura vezes o 'r' encont
 r = 100.0 / image.shape[1]
 dim = (100, int(image.shape[0] * r))
 ```
-Com o comando abaixo, executamo de fato a redimensão da imagem, os argumentos passados são: a imagem, nova dimensão e o algoritmo a ser utilizado para redimencionar a imagem.
+Com o comando abaixo, executamos de fato a redimensão da imagem, os argumentos passados são: a imagem, nova dimensão e o algoritmo a ser utilizado para redimencionar a imagem.
 
 ```markdown
 resized = cv2.resize(image, dim, interpolation = cv2.INTER_AREA)

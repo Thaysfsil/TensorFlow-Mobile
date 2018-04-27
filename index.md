@@ -311,7 +311,7 @@ Para visualizar o crop digite:
 
 ```markdown
 mimg=mpimg.imread('cropped1.jpg')
-plt.imshow(mimg
+plt.imshow(mimg)
 ```
 
 <br />

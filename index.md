@@ -170,11 +170,8 @@ Este projeto é uma implementação do artigo [A Learned Representation For Art
 
 ## O APP
 <br />
-<br />
 <img src="L2.jpeg" width="40%">
 <br />
-<br />
-
 - O primeiro botão, rotulado com um número (256 por padrão), controla o tamanho da imagem a ser exibida Números menores significam imagens menores, que serão mais rápidas de transformar, mas terão qualidade inferior. Por outro lado, as imagens maiores conterão mais detalhes, mas levarão mais tempo para serem transformadas.
 - O segundo botão salvará o quadro atual no seu dispositivo para você usar posteriormente.
 - As miniaturas representam os possíveis estilos que você pode usar para transformar o feed da câmera. Cada imagem é um controle deslizante e você pode combinar vários controles deslizantes que representarão as proporções de cada estilo que você deseja aplicar. Essas proporções, junto com o frame da câmera, representam as entradas na rede.

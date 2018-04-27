@@ -258,4 +258,4 @@ private void renderDebug(final Canvas canvas) {
  // ... more provided code for rendering the text ...
 }
 ```
-
+No Android Studio, pressione o botão Executar e aguarde a construção do projeto.

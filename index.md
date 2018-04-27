@@ -169,7 +169,7 @@ O APP deve ser algo como na figura:
 Primeiro clone o repositorio:
 
 ```markdown
-git clone https://github.com/googlecodelabs/tensorflow-style-transfer-android
+git clone https://github.com/larissalages/style-transfer-android.git
 ```
 Carregue o código no Android Studio: <br />
     1. Abra o Android Studio e selecione Import Project, navegue pelos diretórios até encontrar o repositório clonado.<br />

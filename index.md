@@ -226,3 +226,23 @@ Ainda na classe StylizeActivity.java, dentro do método **stylizeImage**, adicio
 
 }
 ```
+**Opcional**: Localize renderDebug e inclua o texto de status do TensorFlow (acionada quando você pressiona as teclas de volume).
+
+```markdown
+private void renderDebug(final Canvas canvas) {
+ // ... provided code that does some drawing ...
+
+ // Look for this line, but don't copy it, it's already there.
+ final Vector<String> lines = new Vector<>();
+
+ // Add these three lines right here:
+ final String[] statLines = inferenceInterface.getStatString().split("\n");
+ Collections.addAll(lines, statLines);
+ lines.add("");
+
+ // Don't add this line, it's already there
+ lines.add("Frame: " + previewWidth + "x" + previewHeight);
+ // ... more provided code for rendering the text ...
+}
+```
+

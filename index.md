@@ -218,15 +218,84 @@ img=mpimg.imread('ensaiosbumbas.jpg')
 plt.imshow(img)
 ```
 <br />
-<img src="ensaiosbumbas.jpg" width="80%">
-<br / 
-- O primeiro passo é importar a bibliotecas que iremos precisar.
+<img src="ensaiosbumbas.jpg" width="70%">
+<br /> 
+
+## Redimensionando a imagem
+
+Em alguns casos uma imagem muito grande é um problema para o aprendizado da rede. E nesse caso se faz necessário redimensionar a imagem.
+
+- Para abrir a imagem com o OpenCv e visualizar o as dimensões da imagem basta digitar o código abaixo:
+```markdown
+image = cv2.imread('ensaiosbumbas.jpg')
+image.shape
+```
+- Para abrir a imagem com o OpenCv e visualizar o as dimensões da imagem basta digitar o código abaixo:
+```markdown
+image = cv2.imread('ensaiosbumbas.jpg')
+image.shape
+```
+Antes de redimensionar uma imagem precisamos levar em consideração a proporção da imagem, assim não iremos alterar o formato
+original da imagem.
+<br />
+No caso abaixo, estamos colocando a imagem para 100px de largura, mas para isso precisamos primeiro calcular o ratio da imagem. A proporção entre a altura e a largura. 
+<br />
+r é igual 100px / pela altura
+<br />
+A dimensão da imagem final ficará 100px de largura e altura vezes o 'r' encontrado.
 
 ```markdown
-import  cv2
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
+r = 100.0 / image.shape[1]
+dim = (100, int(image.shape[0] * r))
 ```
+Com o comando abaixo, executamo de fato a redimensão da imagem, os argumentos passados são: a imagem, nova dimensão e o algoritmo a ser utilizado para redimencionar a imagem.
+
+```markdown
+resized = cv2.resize(image, dim, interpolation = cv2.INTER_AREA)
+cv2.imshow("resized", resized)
+cv2.waitKey(0)
+```
+Para vizualizar as modificações digite:
+
+```markdown
+mimg=mpimg.imread('resized.jpg')
+plt.imshow(mimg)
+```
+
+<br />
+<img src="resized.jpg" width="70%">
+<br />
+
+## Rotacionado a imagem
+
+Outro passo importante na criação de um banco de imagens é que o classificador deve ser capaz de reconhecer seu objeto por exemplo de todos os angulos. Então montar uma base de dados com imagens rotacionadas pode ajudar na classificação.
+
+Salve as dimensões da imagem em um variável, e calcule o centro da imagem, simplesmente dividindo altura e largura por 2. 
+
+```markdown
+(h, w) = image.shape[:2]
+center = (w / 2, h / 2))
+```
+"getRotationMatrix"  o primeiro argumento é o centro da image que computamos. Se quisessemos que a imagem rotacionasse sobre algum ponto arbritrário o esse ponto seria inserido aqui.  O segundo argumeto é o ângulo de rotação (em graus). E por último o fator escalar. Neste caso 1.0 mantém a imagem no tamanho original, se quisessemos diminuir a imagem podemos colocar 0.5 ou para aumentar 0.2. Agora insira o código abaixo:
+
+```markdown
+M = cv2.getRotationMatrix2D(center, 180, 1.0)
+rotated = cv2.warpAffine(image, M, (w, h))
+cv2.imwrite("rotated.jpg", rotated)
+```
+Observe que o a rotaçao só ocorre quando chamamos a função warpAffine, que recebe a imagem, os parêmetros de rotação, e as dimensões da imagem.
+
+<br />
+Para visualizar a mudança digite: 
+
+```markdown
+mimg=mpimg.imread('rotated.jpg')
+plt.imshow(mimg
+```
+
+<br />
+<img src="rotated.jpg" width="70%">
+<br />
 
 
 # Parte 3: Artistic style transfer

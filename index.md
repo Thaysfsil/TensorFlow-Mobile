@@ -178,7 +178,7 @@ source activate tensorflowEnv
 - Pelo terminal do ambiente acesse esse diretório
 - Ainda no terminal digite:
 ```markdown
-Jupyter notebook
+jupyter notebook
 ```
 O Jupyter irá gerar um link, que você deve copiar e colar dentro do navegado. <br />
 Já dentro do navegador, no canto direito de da página selecione:

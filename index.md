@@ -202,6 +202,7 @@ private static final String STYLE_NODE = "style_num";
 private static final String OUTPUT_NODE = "transformer/expand/conv3/conv/Sigmoid";
 ```
 Na mesma classe, ache o método **onPreviewSizeChosen** e crie um objeto da classe **TensorFlowInferenceInterface**. Este objeto vai ser usado para inicialização e vai ser chamado uma vez que todas as permissões forem concedidas ao sistema de arquivos e à câmera.
+
 ```markdown
 @Override
 public void onPreviewSizeChosen(final Size size, final int rotation) {
@@ -210,4 +211,18 @@ public void onPreviewSizeChosen(final Size size, final int rotation) {
 
 }
 ```
+Ainda na classe StylizeActivity.java, dentro do método **stylizeImage**, adicione o código para passar o bitmap da nossa câmera e os estilos escolhidos para o TensorFlow e pegue a saída do gráfico.
+```markdown
+ // Copy the input data into TensorFlow.
+ inferenceInterface.feed(INPUT_NODE, floatValues, 
+   1, bitmap.getWidth(), bitmap.getHeight(), 3);
+ inferenceInterface.feed(STYLE_NODE, styleVals, NUM_STYLES);
 
+ // Execute the output node's dependency sub-graph.
+ inferenceInterface.run(new String[] {OUTPUT_NODE}, isDebug());
+
+ // Copy the data from TensorFlow back into our array.
+ inferenceInterface.fetch(OUTPUT_NODE, floatValues);
+
+}
+```

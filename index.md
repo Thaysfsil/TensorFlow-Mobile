@@ -179,12 +179,13 @@ source activate tensorflowEnv
 ```markdown
 Jupyter notebook
 ```
-O Jupyter irá gerar um link, que você deve copiar e colar dentro do navegado.
+O Jupyter irá gerar um link, que você deve copiar e colar dentro do navegado. <br />
 Já dentro do navegador, no canto direito de da página selecione:
 New -> terminal
 <br />
-<img src="img001.png" width="60%">
-<br /
+<img src="img001.png" width="100%">
+<br />
+
 
 
 # Parte 3: Artistic style transfer

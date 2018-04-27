@@ -297,6 +297,29 @@ plt.imshow(mimg
 <img src="rotated.jpg" width="70%">
 <br />
 
+## Selecionando a região de interesse
+
+É comum que o todo de uma imagem não represente o único objeto que queremos classificar. Por isso, "recortar" a região de interesse é um procedimento comum no pré-processamento de imagens.
+
+Para isso digite o comando abaixo, lembrando que você deve indicar o local de "recorte" da imagem.
+```markdown
+cropped = image[X_inicio:X_fim, Y_inicio:Y_fim]
+cv2.imwrite("cropped1.jpg", cropped)
+```
+<br />
+Para visualizar o crop digite: 
+
+```markdown
+mimg=mpimg.imread('cropped1.jpg')
+plt.imshow(mimg
+```
+
+<br />
+<img src="cropped1.jpg" width="70%">
+<br />
+<img src="cropped2.jpg" width="70%">
+<br />
+
 
 # Parte 3: Artistic style transfer
 

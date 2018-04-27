@@ -164,7 +164,7 @@ O APP deve ser algo como na figura:
 <br />
 <br />
 # Parte 2: Criando um banco de dados
-Instrução de maniplação básica de imagens, para criação de um banco para treinamento da rede.
+Instruções de manipulação básica de imagens, para criação de um banco para treinamento da rede.
 
 ## Instalação
 <br/>
@@ -225,7 +225,7 @@ plt.imshow(img)
 
 Em alguns casos uma imagem muito grande é um problema para o aprendizado da rede. E nesse caso se faz necessário redimensionar a imagem.
 
-- Para abrir a imagem com o OpenCv e visualizar o as dimensões da imagem basta digitar o código abaixo:
+- Para abrir a imagem com o OpenCv e visualizar as dimensões basta digitar o código abaixo:
 ```markdown
 image = cv2.imread('ensaiosbumbas.jpg')
 image.shape

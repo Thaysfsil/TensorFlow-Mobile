@@ -189,7 +189,9 @@ Carregue o código no Android Studio: <br />
     3. Assim que terminar de importar o projeto, abra o arquivo **StylizeActivity**.
     
 O código original do TensorFlow que gerou esta rede está disponível [nesta página do GitHub](https://github.com/tensorflow/magenta). Antes de usá-lo em um ambiente com recursos restritos, como um aplicativo móvel, esse modelo foi exportado e transformado para usar tipos de dados menores e remover cálculos redundantes. O resultado final é o arquivo **stylize_quantized.pb** que será usado neste app.
-
+<br />
+A câmera fornece dados de imagem no espaço **YUV** (como é o mais amplamente suportado), mas a rede espera **RGB**. Para realizar essa conversão e para toda as outras transformações necessárias para as imagens é utilizada a biblioteca **ImageUtils**. 
+<br />
 Para adicionar as bibliotecas de inferência e suas dependências ao nosso projeto, precisamos adicionar a Biblioteca de inferências Android TensorFlow e a API Java, que está disponível no JCenter (em Arquivos, tensorflow-android)
 1. No Android Studio abra o build.gradle <br />
 2. Adicione o seguinte código ao arquivo:

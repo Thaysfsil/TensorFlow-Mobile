@@ -183,7 +183,7 @@ Para adicionar as bibliotecas de inferência e suas dependências ao nosso proje
 2. Adicione o seguinte código ao arquivo:
 ```markdown
 dependencies {
-   compile 'org.tensorflow:tensorflow-android:1.2.0-preview'
+   compile 'org.tensorflow:tensorflow-android:1.5.0'
 }
 ```
 Clique no botão Gradle Sync para permitir as mudanças dentro da IDE.

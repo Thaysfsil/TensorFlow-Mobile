@@ -315,9 +315,9 @@ plt.imshow(mimg
 ```
 
 <br />
-<img src="cropped1.jpg" width="70%">
+<img src="cropped.jpg" width="50%">
 <br />
-<img src="cropped2.jpg" width="70%">
+<img src="cropped2.jpg" width="50%">
 <br />
 
 

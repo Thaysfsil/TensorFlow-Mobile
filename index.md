@@ -190,3 +190,16 @@ dependencies {
 ```
 Clique no botão Gradle Sync para permitir as mudanças dentro da IDE.
 
+Logo depois da declaração da classe StylizeActivity, e antes de "private static final int NUM_STYLES = 26;" coloque o seguinte codigo
+```markdown
+private TensorFlowInferenceInterface inferenceInterface;
+
+private static final String MODEL_FILE = "file:///android_asset/stylize_quantized.pb";
+
+private static final String INPUT_NODE = "input";
+private static final String STYLE_NODE = "style_num";
+
+private static final String OUTPUT_NODE = "transformer/expand/conv3/conv/Sigmoid";
+```
+
+

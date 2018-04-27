@@ -169,6 +169,11 @@ O APP deve ser algo como na figura:
 Este projeto é uma implementação do artigo [A Learned Representation For Artistic Style](https://arxiv.org/abs/1610.07629).
 
 ## O APP
+<br />
+<br />
+<img src="L2.jpeg" width="40%">
+<br />
+<br />
 
 ## Implementando
 Primeiro clone o repositorio:

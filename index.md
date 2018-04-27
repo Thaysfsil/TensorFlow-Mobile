@@ -201,5 +201,13 @@ private static final String STYLE_NODE = "style_num";
 
 private static final String OUTPUT_NODE = "transformer/expand/conv3/conv/Sigmoid";
 ```
+Na mesma classe, ache o método **onPreviewSizeChosen** e crie um objeto da classe **TensorFlowInferenceInterface**. Este objeto vai ser usado para inicialização e vai ser chamado uma vez que todas as permissões forem concedidas ao sistema de arquivos e à câmera.
+```markdown
+@Override
+public void onPreviewSizeChosen(final Size size, final int rotation) {
+ //copie e cole esta linha
+ inferenceInterface = new TensorFlowInferenceInterface(getAssets(), MODEL_FILE);
 
+}
+```
 

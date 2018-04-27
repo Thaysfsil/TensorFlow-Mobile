@@ -277,7 +277,7 @@ Salve as dimensões da imagem em um variável, e calcule o centro da imagem, sim
 (h, w) = image.shape[:2]
 center = (w / 2, h / 2))
 ```
-"getRotationMatrix"  o primeiro argumento é o centro da image que computamos. Se quisessemos que a imagem rotacionasse sobre algum ponto arbritrário o esse ponto seria inserido aqui.  O segundo argumeto é o ângulo de rotação (em graus). E por último o fator escalar. Neste caso 1.0 mantém a imagem no tamanho original, se quisessemos diminuir a imagem podemos colocar 0.5 ou para aumentar 0.2. Agora insira o código abaixo:
+"getRotationMatrix"  o primeiro argumento é o centro da image que computamos. Se quisessemos que a imagem rotacionasse sobre algum ponto arbritrário o esse ponto seria inserido aqui.  O segundo argumeto é o ângulo de rotação (em graus). E por último o fator escalar. Neste caso 1.0 mantém a imagem no tamanho original, se quisessemos diminuir a imagem podemos colocar 0.5 ou para aumentar 2.0. Agora insira o código abaixo:
 
 ```markdown
 M = cv2.getRotationMatrix2D(center, 180, 1.0)

@@ -192,6 +192,7 @@ O código original do TensorFlow que gerou esta rede está disponível [nesta p�
 <br />
 A câmera fornece dados de imagem no espaço **YUV** (como é o mais amplamente suportado), mas a rede espera **RGB**. Para realizar essa conversão e para toda as outras transformações necessárias para as imagens é utilizada a biblioteca **ImageUtils**. 
 <br />
+<br />
 Para adicionar as bibliotecas de inferência e suas dependências ao nosso projeto, precisamos adicionar a Biblioteca de inferências Android TensorFlow e a API Java, que está disponível no JCenter (em Arquivos, tensorflow-android)
 1. No Android Studio abra o build.gradle <br />
 2. Adicione o seguinte código ao arquivo:

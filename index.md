@@ -163,8 +163,31 @@ O APP deve ser algo como na figura:
 <img src="L.jpeg" width="40%">
 <br />
 <br />
+# Parte 2: Criando um banco de dados
+Instrução de maniplação básica de imagens, para criação de um banco para treinamento da rede.
 
-# Parte 2: Artistic style transfer
+## Instalação
+<br/>
+Ative novamente o diretórtio, na pasta miniconda/bin digite:
+```markdown
+source activate tensorflowEnv
+```
+
+- Crie um diretorio para salvar suas imagens
+- Pelo terminal do ambiente acesse esse diretório
+- Ainda no terminal digite:
+```markdown
+Jupyter notebook
+```
+O Jupyter irá gerar um link, que você deve copiar e colar dentro do navegado.
+Já dentro do navegador, no canto direito de da página selecione:
+New -> terminal
+<br />
+<img src="img001.png" width="60%">
+<br /
+
+
+# Parte 3: Artistic style transfer
 
 Este projeto é uma implementação do artigo [A Learned Representation For Artistic Style](https://arxiv.org/abs/1610.07629).
 

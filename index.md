@@ -291,7 +291,7 @@ Para visualizar a mudança digite:
 
 ```markdown
 mimg=mpimg.imread('rotated.jpg')
-plt.imshow(mimg
+plt.imshow(mimg)
 ```
 
 <br />

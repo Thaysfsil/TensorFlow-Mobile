@@ -187,6 +187,47 @@ New -> terminal
 <br />
 
 
+No terminal digite:
+```markdown
+bash
+```
+Então iremos instalar o OpenCv ( que é uma biblioteca de manipulação de imagens), digite:
+```markdown
+conda install -c conda-forge opencv
+```
+
+Ao finalizar a instalação volte para a página principal, e no lado direito selecione:
+new-> python 
+<br />
+<img src="img001.png" width="100%">
+<br />
+
+Uma página com interação no python irá abrir (este é o notebook).
+- O primeiro passo é importar a bibliotecas que iremos precisar.
+
+```markdown
+import  cv2
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+```
+
+- Em seguida abrir a imagem para manipula-la
+
+```markdown
+img=mpimg.imread('ensaiosbumbas.jpg')
+plt.imshow(img)
+```
+<br />
+<img src="ensaiosbumbas.jpg" width="80%">
+<br / 
+- O primeiro passo é importar a bibliotecas que iremos precisar.
+
+```markdown
+import  cv2
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+```
+
 
 # Parte 3: Artistic style transfer
 

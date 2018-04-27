@@ -166,6 +166,8 @@ O APP deve ser algo como na figura:
 
 # Parte 2: Artistic style transfer
 
+Este projeto é uma implementação do artigo [A Learned Representation For Artistic Style](https://arxiv.org/abs/1610.07629).
+
 Primeiro clone o repositorio:
 
 ```markdown

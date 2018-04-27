@@ -169,6 +169,7 @@ Instruções de manipulação básica de imagens, para criação de um banco par
 ## Instalação
 <br/>
 Ative novamente o diretórtio, na pasta miniconda/bin digite:
+
 ```markdown
 source activate tensorflowEnv
 ```

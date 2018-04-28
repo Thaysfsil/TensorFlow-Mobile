@@ -253,8 +253,7 @@ Com o comando abaixo, executamos de fato a redimensão da imagem, os argumentos 
 
 ```markdown
 resized = cv2.resize(image, dim, interpolation = cv2.INTER_AREA)
-cv2.imshow("resized", resized)
-cv2.waitKey(0)
+cv2.imwrite("resized.jpg", resized)
 ```
 Para vizualizar as modificações digite:
 
